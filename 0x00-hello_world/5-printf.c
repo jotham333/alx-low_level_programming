@@ -1,6 +1,10 @@
 #include <stdio.h>
 
-/*This code will print the said string*/
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	printf("with proper grammer, but the outcome is a piece of art,\n");
