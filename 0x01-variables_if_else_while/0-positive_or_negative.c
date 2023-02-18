@@ -1,10 +1,14 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
-/* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+ * main - This code checks if an int + or -
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
+
 {
 	int n;
 
