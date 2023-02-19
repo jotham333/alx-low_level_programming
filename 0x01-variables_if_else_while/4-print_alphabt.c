@@ -1,20 +1,20 @@
 #include <stdio.h>
 
-
 /**
+ * main - Entry point
  *
- * main - print alphabet from a-z excluding e and q
- *
- * Recover: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	char n = 'a';
 
-		while (n <= 'z' && n != 'e' && n != 'q')
+		while (n <= 'z')
 		{
-			putchar(n);
+			if (n != 'e' && n != 'q')
+			{
+				putchar(n);
+			}
 			n++;
 		}
 
