@@ -1,16 +1,23 @@
 #include <stdio.h>
 int main(void)
 {	
-	int size =8;
-	int array[] = {2, 4, 6, 9, 7, 0, 3, 77};
+	int i;
+	int j;
 
-	int i =0;
-
-	while (i < size)
+	for (i = 0; i < 100; i++)
 	{
-		printf("%d, ", array[i]);
-		i++;
+		for (j = 0; j < 100; j++)
+		{
+			putchar(i + '0');
+
+			if (i <= 99)
+			{
+				putchar(',');
+				putchar(' ');
+			}
+		}
 	}
+	putchar('\n');
 
 	return (0);
 }
