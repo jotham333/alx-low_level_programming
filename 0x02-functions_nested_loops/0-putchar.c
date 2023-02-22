@@ -1,4 +1,4 @@
-#include "jlib.h"
+#include "main.h"
 
 /**
  * main - print putchar
@@ -9,4 +9,5 @@
 int main(void)
 {
 	printout("_putchar\n");
+	return (0);
 }

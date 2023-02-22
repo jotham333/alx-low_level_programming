@@ -1,4 +1,4 @@
-#include "jlib.h"
+#include "main.h"
 
 /**
  * main - print a to z using putchar
