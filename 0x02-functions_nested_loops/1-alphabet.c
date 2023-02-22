@@ -6,14 +6,13 @@
  * Return: ALways 0 (Success)
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	char c;
+	char a;
 
-	for (c = 'a'; c <= 'z'; c++)
+	for (a = 'a'; a <= 'z'; a++)
 	{
-		print_alphabet(c);
+		_putchar(a);
 	}
-	print_alphabet('\n');
-	return (0);
+	_putchar('\n');
 }
