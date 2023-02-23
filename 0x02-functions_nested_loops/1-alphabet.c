@@ -1,9 +1,7 @@
 #include "main.h"
 
 /**
- * main - print a to z using putchar
- *
- * Return: ALways 0 (Success)
+ * print_alphabet - print a to z using putchar
  */
 
 void print_alphabet(void)
