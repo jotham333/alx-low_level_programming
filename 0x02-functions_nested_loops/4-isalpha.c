@@ -2,16 +2,16 @@
 #include <ctype.h>
 
 /*
- * _islower - checks for lowercase character
+ * _isalpha - checks if input is alphabet
  *
  * @c: the character to be checked
  *
  * Return: 1 if c is lowercase, 0 otherwise
  */
-int _islower(int c)
-{
 
-	if (islower(c))
+int _isalpha(int c)
+{
+	if (isalpha(c))
 	{
 		return (1);
 	}
