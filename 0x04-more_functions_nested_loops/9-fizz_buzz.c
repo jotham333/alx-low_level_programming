@@ -5,8 +5,6 @@
 /**
  *main - checkes if a character is digit
  *
- * @c: is the parameter
- *
  * Return: 1 if successful and 0 if not
  */
 
