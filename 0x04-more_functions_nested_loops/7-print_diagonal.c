@@ -28,5 +28,9 @@ void print_diagonal(int n)
 		row++;
 		_putchar('\n');
 	}
+	if ( n <= 0)
+	{
+		_putchar('\n');
+	}
 
 }
