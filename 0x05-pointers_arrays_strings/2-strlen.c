@@ -12,16 +12,10 @@
 
 int _strlen(char *s)
 {
-	int len = strlen(str);
-	int count = 0;
+	int len;
 
-	for (int i = 0; i < len; i++)
+	for (len = 0; s[len] != '\0'; len++)
 	{
-	if (str[i] == ' ')
-	{
-	count++;
 	}
-	}
-
-	return (count);
+	return (len);
 }
