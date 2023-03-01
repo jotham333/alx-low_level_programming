@@ -3,7 +3,7 @@
 
 
 /**
- * reset - print 98 as integer value
+ * reset_to_98 - print 98 as integer value
  *
  * @n: parameter number
  */
