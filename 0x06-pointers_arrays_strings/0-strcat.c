@@ -1,18 +1,18 @@
-#include <stdio.h>
-#include <string.h>
 #include "main.h"
+#include <string.h>
 
 /**
  * _strcat - append the content of src to dest
  *
- *@dest && @src - the parameters
+ *@dest: the destination parameters
  *
+ *@src: the source parameter
  * Return: dest to the console
  */
 
 
 char *_strcat(char *dest, char *src)
 {
-	strcat(dest , src);
+	strcat(dest, src);
 	return (dest);
 }
