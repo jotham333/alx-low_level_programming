@@ -4,15 +4,13 @@
 
 
 /**
- *  *_strchr:  look for a character in a string
+ *_strchr - look for a character in a string
  *
- *@*s: the variable that contains the string
+ *@s: the variable that contains the string
  *
- *@c the character to look for
+ *@c: the character to look for
  *
  *Return: the character if found un the string
- *
- *Return: NULL if not found
  */
 
 
@@ -24,8 +22,8 @@ char *_strchr(char *s, char c)
 	{
 		if (s[i] == c)
 		{
-			return &(s[i]);
+			return (&(s[i]));
 		}
 	}
-	return NULL;
+	return (NULL);
 }
