@@ -3,9 +3,9 @@
 /**
  *set_string - set the value of a pointer to char
  *
- *@s - pointer to pointer
+ *@s: pointer to pointer
  *
- *@to - pointer variable
+ *@to: pointer variable
  */
 void set_string(char **s, char *to)
 {
