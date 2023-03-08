@@ -20,10 +20,11 @@ unsigned int _strspn(char *s, char *accept)
 	bool found;
 
 	len = 0;
-	found = false;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
+		found = false;
+
 		for (j = 0; accept[j] != '\0'; j++)
 		{
 			if (s[i] == accept[j])
