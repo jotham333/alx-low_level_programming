@@ -4,17 +4,13 @@
 
 
 /**
- *main - function name
+ * main - function name
  *
  *@argc: arguement counter
  *
  *@argv: arguement vector
  *
- *_atoi - changes input from string to integer
- *
- *@s: parameter
- *
- *Retrun: 0 if succesful and 1 otherwise
+ *Return: 0 if succesful and 1 otherwise
  */
 
 
@@ -36,6 +32,13 @@ int main(int argc, char *argv[])
 }
 
 
+/**
+ * _atoi - changes input from string to integer
+ *
+ *@s: parameter
+ *
+ *Return: 0 Always
+ */
 
 int _atoi(char *s)
 {
