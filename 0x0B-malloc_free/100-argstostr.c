@@ -1,51 +1,40 @@
 #include "main.h"
-#include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
-
-
 /**
- *argstostr - turns arguement to string
- *
- *@ac: arguement counter
- *
- *@av: arguement vector
- *
- *Return: j if successful and NULL otherwise
+ * argstostr - main entry
+ * @ac: int input
+ * @av: double pointer array
+ * Return: 0
  */
-
 char *argstostr(int ac, char **av)
 {
-	int i, len;
-	char *a, *j;
+	int i, n, r = 0, l = 0;
+	char *str;
 
-	if (av == NULL)
-	{
+	if (ac == 0 || av == NULL)
 		return (NULL);
-	}
-
-	len = 0;
 
 	for (i = 0; i < ac; i++)
 	{
-		len = len + strlen(av[i]) + 1;
+		for (n = 0; av[i][n]; n++)
+			l++;
 	}
+	l += ac;
 
-	j = malloc(sizeof(char) * len);
-
-	if (j == NULL)
-	{
+	str = malloc(sizeof(char) * l + 1);
+	if (str == NULL)
 		return (NULL);
-	}
-
-	a = j;
-
 	for (i = 0; i < ac; i++)
 	{
-		strcpy(a, av[i]);
-		a = a + strlen(av[i]);
-		*a++ = '\n';
+	for (n = 0; av[i][n]; n++)
+	{
+		str[r] = av[i][n];
+		r++;
 	}
-	*--a = '\0';
-	return (j);
+	if (str[r] == '\0')
+	{
+		str[r++] = '\n';
+	}
+	}
+	return (str);
 }
