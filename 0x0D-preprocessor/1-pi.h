@@ -1,5 +1,5 @@
-#ifndef OBLECT_MACRO_H
-#define OBJECT_MACRO_H
+#ifndef BLACK_H
+#define BLACK_H
 
 #define PI 3.14159265359
 
