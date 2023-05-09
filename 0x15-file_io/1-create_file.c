@@ -7,7 +7,7 @@
  *
  * @str: the string lenght to be calculated
  *
- * Return the length of the string
+ * Return: the length of the string
  */
 
 int _strlen(char *str)
