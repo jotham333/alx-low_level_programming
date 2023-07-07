@@ -2,10 +2,12 @@
 
 /**
  * key_index - gives the index of a key
- * 
+ *
  * @key: pointer to the key index to be given
  *
  * @size: pointer to the size of the array
+ *
+ * Return: The index
  */
 
 unsigned long int key_index(const unsigned char *key, unsigned long int size)

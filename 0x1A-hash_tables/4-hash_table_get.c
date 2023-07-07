@@ -5,7 +5,7 @@
  *
  * @ht: Pointer to the hash table
  *
- * @ket: Pointer to the key
+ * @key: Pointer to the key
  *
  * Return: Returns the value associated with the element,
  * or NULL if key couldn’t be found

@@ -2,26 +2,16 @@
 
 
 /**
- * Sets a key/value pair in the hash table.
+ * hash_table_set - setup the hash table
  *
- * This function adds or updates a key/value pair in the provided hash table.
- * If the key already exists, the associated value is updated. If the key does not
- * exist, a new key/value pair is added to the hash table.
+ * @ht: Pointer to the hash table
  *
- * @param ht The hash table to add/update the key/value pair.
- * @param key The key to be added/updated. Must not be an empty string.
- * @param value The value associated with the key. It will be duplicated internally.
- *              It can be an empty string.
- * @return 1 if the operation is successful, 0 otherwise.
- *         Returns 1 when the key/value pair is successfully added/updated.
- *         Returns 0 if the provided hash table is NULL, the key is NULL or empty,
- *         or if memory allocation fails.
+ * @key: Pointer to the key of the table
  *
- * In case of a collision (multiple keys hashed to the same index),
- * the new key/value pair is added at the beginning of the linked list
- * at the corresponding index.
+ * @value: Pointer to the value of the hash table
+ *
+ * Return: 1 on success and 0 otherwise
  */
-
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	hash_node_t *current;
